@@ -27,8 +27,8 @@ void TridentOneInterface::callbackControlCmd(
 
     float output_throttle = 0, output_brake = 0, output_steer = 0;
     if(brake)
-    {
-        output_brake = map(desired_accel, -1.5, 0, 0, 10000);
+    {   
+        output_brake = map(desired_accel, -1.5, 0, 10000, 0);
     }
     else
     {
